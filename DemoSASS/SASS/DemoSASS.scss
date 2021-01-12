@@ -1,0 +1,64 @@
+// Khai bao bien 
+$bg-color:red;
+
+
+h1{
+    background-color: yellow;
+}
+h2{
+    background-color: $bg-color;
+}
+
+// Nesting
+.sec1 {
+    h2{
+        background-color: palegreen;
+    }
+    // button hover
+    button{
+        background-color: blue;
+        color: white;
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+// Ke thua
+    // @extend
+.sec2{
+    @extend .sec1;
+    button{
+        padding: 11px 12px;
+    }
+}
+
+// Mixin (Gan giong Function)
+    // Khong co tham so
+@mixin StyleSection {
+    h2{
+        background-color:olivedrab;
+    }
+    button{
+        background-color: orange;
+    }
+}
+.sec3{
+    @include StyleSection();
+}
+    // Co tham so
+@mixin StyleNewSection ($bg-h2, $bg-button) {
+    h2{
+        background-color: $bg-h2;
+    }
+    button{
+        background-color:$bg-button ;
+    }
+}
+.sec4{
+    @include StyleNewSection(pink, green)
+}
+.sec5{
+    @include StyleNewSection(purple, yellow)
+}

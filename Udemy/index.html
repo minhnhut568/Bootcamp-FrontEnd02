@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Owl -->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+  <!-- Font Family -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap"
+    rel="stylesheet">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+  <!-- Bootstrap BS4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+
+
+
+
+</head>
+
+<body>
+  <header class="container-fluid myNavBar">
+    <nav class="navbar navbar-expand-md">
+      <div class="col-3 col-sm-2 d-md-none icons">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="col-8 col-sm-9 col-md-9 col-lg-9 col-xl-7">
+        <div class="headerLeft row">
+          <a class="navbar-brand" href="#">
+            <img src="./Img/logo-coral.svg" alt="">
+          </a>
+          <span class="categories">
+            <i class="fa fa-th"></i>
+            Categories
+          </span>
+          <form action="" class="headerForm">
+            <div class="input-group ">
+              <input type="text" class="form-control" placeholder="Search for everything"
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-1 col-sm-1 col-md-3 col-lg-3 col-xl-5">
+        <div class="headerRight">
+          <ul class="navbar-nav">
+            <li class="nav-item bussiness">
+              <a class="nav-link" href="#">Udemy for Bussiness</a>
+            </li>
+            <li class="nav-item teach">
+              <a class="nav-link" href="#">Teach on Udemy</a>
+            </li>
+            <li class="nav-item cart">
+              <i class="fa fa-cart-plus"></i>
+            </li>
+            <li class="nav-item ude-btnGroup">
+              <button class="ude-btnWhite">Log In</button>
+              <button class="ude-btnRed">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="udemyCarousel">
+    <div class="udeCarouselContent">
+      <h1>Learn on your schedule</h1>
+      <p>Study any topic, anytime. Choose from thousands of expert-led courses now.
+        Search
+      </p>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="What do you want to learn ?"
+          aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="intro">
+    <div class="introContent">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="introItem d-flex">
+            <div class="introIcon"><i class="fab fa-500px icon"></i></div>
+            <div class="itemText">
+              <p class="p1">100,000 online courses</p>
+              <p class="p2">Explore a variety of fresh topics</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="introItem d-flex">
+            <div class="introIcon"><i class="fab fa-app-store icon"></i></div>
+            <div class="itemText">
+              <p class="p1">Expert instruction</p>
+              <p class="p2">Find the right instructor for you</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="introItem d-flex">
+            <div class="introIcon"><i class="fab fa-free-code-camp icon"></i></div>
+            <div class="itemText">
+              <p class="p1">Lifetime access</p>
+              <p class="p2">Learn on your schedule</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="courses">
+    <div class="courses_content">
+      <div class="row">
+        <div class=" col-lg-4 col-xl-4 courses_left">
+          <div class="courses_intro">
+            <h2>The world’s largest selection of courses</h2>
+            <p>Choose from over 100,000 online video courses with new additions published every months</p>
+          </div>
+        </div>
+        <div class="col-lg-8 col-xl-8 courses_right">
+          <div class="myTab">
+            <!-- Nav pills -->
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#bussiness">Bussiness</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#design">Design</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#photo">Photography</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#dev">Development</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#mkt">Marketing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#it">IT & Software</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#personal">Personal Development</a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content tab-content-courses">
+              <div class="tab-pane container active" id="bussiness">
+                <div class="tab_item d-flex owl-carousel owl-carousel-courses owl-theme">
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh1.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Agile Crash Course: Agile Project</h4>
+                      <p class="card-text">every month</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.8</span>
+                        <span>(16,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$17.99</span>
+                        <span class="new_price">$94.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh3.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">The Complete Web Developer in 2020: Zero to Mastery</h4>
+                      <p class="card-text">Dr.Minh</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.9</span>
+                        <span>(50,340)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$139.99</span>
+                        <span class="new_price">$10.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="tab-pane container fade" id="design">
+                <div class="tab_item d-flex owl-carousel owl-theme">
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh1.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Agile Crash Course: Agile Project</h4>
+                      <p class="card-text">every month</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.8</span>
+                        <span>(16,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$17.99</span>
+                        <span class="new_price">$94.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh3.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">The Complete Web Developer in 2020: Zero to Mastery</h4>
+                      <p class="card-text">Dr.Minh</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.9</span>
+                        <span>(50,340)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$139.99</span>
+                        <span class="new_price">$10.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="tab-pane container fade" id="photo">
+                <div class="tab_item d-flex owl-carousel owl-theme">
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh1.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Agile Crash Course: Agile Project</h4>
+                      <p class="card-text">every month</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.8</span>
+                        <span>(16,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$17.99</span>
+                        <span class="new_price">$94.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh3.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">The Complete Web Developer in 2020: Zero to Mastery</h4>
+                      <p class="card-text">Dr.Minh</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.9</span>
+                        <span>(50,340)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$139.99</span>
+                        <span class="new_price">$10.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="tab-pane container fade" id="dev">
+                <div class="tab_item d-flex owl-carousel owl-theme">
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh1.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Complete Python Developer in 2020: Zero to Mastery</h4>
+                      <p class="card-text">Angie Neavie</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.8</span>
+                        <span>(16,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$17.99</span>
+                        <span class="new_price">$94.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh3.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">The Complete Web Developer in 2020: Zero to Mastery</h4>
+                      <p class="card-text">Dr.Minh</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.9</span>
+                        <span>(50,340)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$139.99</span>
+                        <span class="new_price">$10.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane container fade" id="mkt">
+                <div class="tab_item d-flex owl-carousel owl-theme">
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh1.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Agile Crash Course: Agile Project</h4>
+                      <p class="card-text">every month</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.8</span>
+                        <span>(16,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$17.99</span>
+                        <span class="new_price">$94.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh3.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">The Complete Web Developer in 2020: Zero to Mastery</h4>
+                      <p class="card-text">Dr.Minh</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.9</span>
+                        <span>(50,340)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$139.99</span>
+                        <span class="new_price">$10.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="tab-pane container fade" id="it">
+                <div class="tab_item d-flex owl-carousel owl-theme">
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh1.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Agile Crash Course: Agile Project</h4>
+                      <p class="card-text">every month</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.8</span>
+                        <span>(16,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$17.99</span>
+                        <span class="new_price">$94.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh3.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">The Complete Web Developer in 2020: Zero to Mastery</h4>
+                      <p class="card-text">Dr.Minh</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.9</span>
+                        <span>(50,340)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$139.99</span>
+                        <span class="new_price">$10.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="tab-pane container fade" id="personal">
+                <div class="tab_item d-flex owl-carousel owl-theme">
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh1.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Agile Crash Course: Agile Project</h4>
+                      <p class="card-text">every month</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.8</span>
+                        <span>(16,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$17.99</span>
+                        <span class="new_price">$94.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh3.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">The Complete Web Developer in 2020: Zero to Mastery</h4>
+                      <p class="card-text">Dr.Minh</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.9</span>
+                        <span>(50,340)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$139.99</span>
+                        <span class="new_price">$10.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width:auto">
+                    <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+                      <p class="card-text">Dr.Angela</p>
+                      <div class="rating d-flex">
+                        <div class="rating_star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span class="num">4.5</span>
+                        <span>(25,250)</span>
+                      </div>
+                      <div class="price">
+                        <span class="old_price">$60.99</span>
+                        <span class="new_price">$13.99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="row services_content container d-flex justify-content-center pt-4 pb-4">
+      <div class="col d-lg-flex services_item p-3">
+        <div class="icon">
+          <i class="fa fa-biohazard ishadow"></i>
+          <i class="fa fa-biohazard imain"></i>
+        </div>
+        <div class="text">
+          <h2>Go at your own pace</h2>
+          <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
+        </div>
+      </div>
+      <div class="col d-lg-flex services_item services_item_medium p-3 mx-4">
+        <div class="icon d-left">
+          <i class="fab fa-artstation ishadow"></i>
+          <i class="fab fa-artstation imain"></i>
+        </div>
+        <div class="text">
+          <h2>Learn from industry experts</h2>
+          <p>Select from top instructors around the world</p>
+        </div>
+      </div>
+      <div class="col d-lg-flex services_item p-3">
+        <div class="icon">
+          <i class="fa fa-atom ishadow"></i>
+          <i class="fa fa-atom imain"></i>
+        </div>
+        <div class="text">
+          <h2>Find video courses on almost any topic</h2>
+          <p>Build your library for your career and personal growth</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="students">
+    <div class="tab-content tab-content-student">
+      <div class="tab-pane container active pb-4">
+        <h3 class="mb-4">Students are viewing</h3>
+        <div class="tab_item d-flex owl-carousel owl-carousel-student owl-theme">
+          <div class="card" style="width:auto">
+            <img class="card-img-top" src="./Img/kh10.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Agile Crash Course: Agile Project</h4>
+              <p class="card-text">every month</p>
+              <div class="rating d-flex">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span class="num">4.8</span>
+                <span>(16,250)</span>
+              </div>
+              <div class="price">
+                <span class="old_price">$17.99</span>
+                <span class="new_price">$94.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width:auto">
+            <img class="card-img-top" src="./Img/kh11.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">iOS 13 & Swift 5 : Agile Project </h4>
+              <p class="card-text">Dr.Angela</p>
+              <div class="rating d-flex">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span class="num">4.5</span>
+                <span>(25,250)</span>
+              </div>
+              <div class="price">
+                <span class="old_price">$60.99</span>
+                <span class="new_price">$13.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width:auto">
+            <img class="card-img-top" src="./Img/kh12.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">The Complete Web Developer</h4>
+              <p class="card-text">Dr.Minh</p>
+              <div class="rating d-flex">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span class="num">4.9</span>
+                <span>(50,340)</span>
+              </div>
+              <div class="price">
+                <span class="old_price">$139.99</span>
+                <span class="new_price">$10.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width:auto">
+            <img class="card-img-top" src="./Img/kh13.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+              <p class="card-text">Dr.Angela</p>
+              <div class="rating d-flex">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span class="num">4.5</span>
+                <span>(25,250)</span>
+              </div>
+              <div class="price">
+                <span class="old_price">$60.99</span>
+                <span class="new_price">$13.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width:auto">
+            <img class="card-img-top" src="./Img/kh14.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+              <p class="card-text">Dr.Angela</p>
+              <div class="rating d-flex">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span class="num">4.5</span>
+                <span>(25,250)</span>
+              </div>
+              <div class="price">
+                <span class="old_price">$60.99</span>
+                <span class="new_price">$13.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width:auto">
+            <img class="card-img-top" src="./Img/kh1.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">The Complete Web Developer </h4>
+              <p class="card-text">Dr.Minh</p>
+              <div class="rating d-flex">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span class="num">4.9</span>
+                <span>(50,340)</span>
+              </div>
+              <div class="price">
+                <span class="old_price">$139.99</span>
+                <span class="new_price">$10.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width:auto">
+            <img class="card-img-top" src="./Img/kh2.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+              <p class="card-text">Dr.Angela</p>
+              <div class="rating d-flex">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span class="num">4.5</span>
+                <span>(25,250)</span>
+              </div>
+              <div class="price">
+                <span class="old_price">$60.99</span>
+                <span class="new_price">$13.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width:auto">
+            <img class="card-img-top" src="./Img/kh3.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">iOS 13 & Swift 5 - The Complete iOS App</h4>
+              <p class="card-text">Dr.Angela</p>
+              <div class="rating d-flex">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span class="num">4.5</span>
+                <span>(25,250)</span>
+              </div>
+              <div class="price">
+                <span class="old_price">$60.99</span>
+                <span class="new_price">$13.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="banner">
+    <div class="banner_top_border"></div>
+    <div class="banner_content">
+      <div class="row mt-5">
+        <div class="col"><i class="fa fa-car"></i></div>
+        <div class="col"><i class="fa fa-car-alt"></i></div>
+        <div class="col"><i class="fa fa-car-side"></i></div>
+        <div class="col"><i class="fa fa-car-crash"></i></div>
+        <div class="col"><i class="fa fa-taxi"></i></div>
+      </div>
+      <div class="row mt-5 mb-5">
+        <div class="col"><i class="fa fa-truck"></i></div>
+        <div class="col col-md-6">
+          <div class="text">
+            <h2>Get personalized recommendations</h2>
+            <p>Answer a few questions for your top picks</p>
+            <button class="ude-btnRed">Get started</button>
+          </div>
+        </div>
+        <div class="col"><i class="fa fa-truck-monster"></i></div>
+      </div>
+      <div class="row pb-5 pt-3">
+        <div class="col"><i class="fa fa-cart-arrow-down"></i></div>
+        <div class="col"><i class="fa fa-baby-carriage"></i></div>
+        <div class="col"><i class="fa fa-luggage-cart"></i></div>
+        <div class="col"><i class="fa fa-cart-plus"></i></div>
+        <div class="col"><i class="fa fa-shopping-cart"></i></div>
+      </div>
+    </div>
+  </section>
+  <section class="topCategories">
+    <div class="topCategories_content pb-4">
+      <h3 class="pl-4">Top Categories</h3>
+      <div class="card-group">
+        <div class="card d-flex">
+          <span class="d-flex">
+            <i class="fab fa-usps"></i>
+            <p>Development</p>
+          </span>
+        </div>
+        <div class="card d-flex">
+          <span class="d-flex">
+            <i class="fa fa-store"></i>
+            <p>Bussiness</p>
+          </span>
+        </div>
+        <div class="card d-flex">
+          <span class="d-flex">
+            <i class="fa fa-desktop"></i>
+            <p>IT & Software</p>
+          </span>
+        </div>
+        <div class="card d-flex">
+          <span class="d-flex">
+            <i class="fa fa-pencil-ruler"></i>
+            <p>Design</p>
+          </span>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card d-flex">
+          <span class="d-flex">
+            <i class="fa fa-marker"></i>
+            <p>Marketing</p>
+          </span>
+        </div>
+        <div class="card d-flex">
+          <span class="d-flex">
+            <i class="fa fa-bible"></i>
+            <p>Personal Development</p>
+          </span>
+        </div>
+        <div class="card d-flex">
+          <span class="d-flex">
+            <i class="fa fa-camera-retro"></i>
+            <p>Photography</p>
+          </span>
+        </div>
+        <div class="card d-flex">
+          <span class="d-flex">
+            <i class="fa fa-guitar"></i>
+            <p>Music</p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feedback mt-5 pt-4">
+    <div class="tab-content-feedback">
+      <div class="tab-pane container active pb-4">
+        <h3 class="mb-4">What our students have to say</h3>
+        <div class="tab_item d-flex owl-carousel owl-carousel-feedback owl-theme">
+          <div class="card p-4" style="width:auto">
+            <div class="d-flex mb-3">
+              <div class="pic pic1"></div>
+              <p class="name">Borivoje</p>
+            </div>
+            <p>Udemy is a life saver. I don't have the time or money for a college education. My goal is to become a
+              freelance web developer</p>
+          </div>
+          <div class="card p-4" style="width:auto">
+            <div class="d-flex mb-3">
+              <div class="pic pic2"></div>
+              <p class="name">John</p>
+            </div>
+            <p>I believe in lifelong learning and Udemy is a great place to learn from experts. I've learned a lot and
+              recommend it to all my friends.</p>
+          </div>
+          <div class="card p-4" style="width:auto">
+            <div class="d-flex mb-3">
+              <div class="pic pic3"></div>
+              <p class="name">Marry</p>
+            </div>
+            <p>My children and I LOVE Udemy! The courses are fantastic and the instructors are so fun and knowledgeable.
+              I only wish we found it sooner.</p>
+          </div>
+          <div class="card p-4" style="width:auto">
+            <div class="d-flex mb-3">
+              <div class="pic pic4"></div>
+              <p class="name">Danny</p>
+            </div>
+            <p>Thank you Udemy! You've renewed my passion for learning and my dream of becoming a web developer. I plan
+              to use Udemy for a long time!</p>
+          </div>
+          <div class="card p-4" style="width:auto">
+            <div class="d-flex mb-3">
+              <div class="pic pic5"></div>
+              <p class="name">Jack</p>
+            </div>
+            <p>I believe in lifelong learning and Udemy is a great place to learn from experts. I've learned a lot and
+              recommend it to all my friends.</p>
+          </div>
+          <div class="card p-4" style="width:auto">
+            <div class="d-flex mb-3">
+              <div class="pic pic6"></div>
+              <p class="name">Danny</p>
+            </div>
+            <p>I believe in lifelong learning and Udemy is a great place to learn from experts. I've learned a lot and
+              recommend it to all my friends.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="companies">
+    <div class="companies_content">
+      <p class="pt-5">Trusted by companies of all sizes</p>
+      <div class="logo">
+        <img src="./Img/booking.svg" alt="">
+        <img src="./Img/volkswagen.svg" alt="">
+        <img src="./Img/mercedes.svg" alt="">
+        <img src="./Img/pinterest.svg" alt="">
+        <img src="./Img/adidas.svg" alt="">
+      </div>
+      <div class="row row_conpanies">
+        <div class="col">
+          <h2>Trusted by companies of all sizes</h2>
+          <p>Top instructors from around the world teach millions of students on Udemy. We provide the tools and skills
+            to teach what you love.</p>
+          <button class="ude-btnRed">Start teaching today</button>
+        </div>
+        <div class="col">
+          <h2>Udemy for Business</h2>
+          <p>Get unlimited access to 4,000+ of Udemy’s top courses for your team.</p>
+          <button class="ude-btnRed">Get Udemy for Bussiness</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer_content">
+      <div class="row pl-5 pb-5">
+        <div class="col">
+          <p class="bold"><a href="#">Udemy for Business</a></p>
+          <p class="bold"><a href="#">Teach on Udemy</a></p>
+          <p><a href="#">Udemy app</a></p>
+          <p><a href="#">About us</a></p>
+        </div>
+        <div class="col">
+          <p><a href="#">Contact us</a></p>
+          <p><a href="#">Careers</a></p>
+          <p><a href="#">Blog</a></p>
+          <p><a href="#">Help and Support</a></p>
+        </div>
+        <div class="col">
+          <p><a href="#">Affiliate</a></p>
+          <p><a href="#">Sitemap</a></p>
+          <p><a href="#">Featured courses</a></p>
+        </div>
+        <div class="col">
+          <!-- Default dropup button -->
+          <div class="btn-group dropup">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="false"
+              aria-expanded="false">
+              <i class="fa fa-globe-africa mr-2"></i>English
+            </button>
+            <div class="dropdown-menu">
+              <p>العربية</p>
+              <p>English</p>
+              <p>Español</p>
+              <p>Français</p>
+              <p>हिन्दी</p>
+              <p>日本語</p>
+              <p>Русский</p>
+              <p>اردو</p>
+              <p>Українська</p>
+              <p>Čeština</p>
+              <p>Português</p>
+              <p>Svenska</p>
+              <p>Türkçe</p>
+              <p>한국어</p>
+              <p>Bahasa</p>
+              <p>中文</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+            <img class="pl-4 pr-3" src="./Img/logo-coral.svg" alt="">
+            <span>Copyright © 2020 Udemy, Inc.</span>
+        </div>
+        <div class="col-4">
+          <span>
+            <a class="pr-4" href="#">Terms</a>
+            <a href="#">Privacy Policy and Cookie Policy</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- Owl -->
+  <script src="./js/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel-courses').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        768: {
+          items: 3
+        },
+      }
+    })
+  </script>
+
+  <script>
+    $('.owl-carousel-student').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        768: {
+          items: 3
+        },
+        992: {
+          items: 4
+        },
+        1200: {
+          items: 5
+        }
+      }
+    })
+  </script>
+  <script>
+    $('.owl-carousel-feedback').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1200: {
+          items: 3
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

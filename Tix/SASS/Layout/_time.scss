@@ -1,0 +1,129 @@
+
+.timeLine {
+    width: 70%;
+    margin: 40px auto; 
+    border: 1px solid #d2d6d4;
+    .timeLine-row {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        .time-border-right {
+            border-right: 1px solid #d2d6d4;
+        }
+    }
+    .nav {
+        // border-right: 1 solid black;
+        margin-left: 10px;
+        .cinema-logo {
+            margin: 5px 15px 10px 5px;
+            border-bottom: 1px solid #d2d6d4;
+            padding: 3px;
+            border-radius: 0;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .nav-link {
+        opacity: 0.5;
+        transition: all 0.5s;
+        color: black;
+        width: 100%;
+        height: 50%;
+        padding: 0;
+
+        border-bottom: 1px solid #d2d6d4;
+        padding: 5px;
+        border-radius: 0;
+        &:hover {
+            opacity: 1;
+        }
+        img {
+            width: 50px;
+        }
+    }
+    .cinema-logo {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        img {
+            width: 100%;
+        }
+    }
+    .nav-link.active {
+        opacity: 1;
+        background-color: transparent;
+        color: black;
+    }
+
+    // second part
+    .tab-pane {
+        margin: 0;
+        .secondpart-content {
+            display: block;
+            .secondpart-cinema {
+                display: flex;
+                img {
+                    width: 50px;
+                }
+                .secondpart-txt {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    // .address-nav {
+
+    // }
+    //Address 
+    .address {
+        .address-content {
+            display: flex;
+            // margin-left: 10px;
+            img {
+                width: 50px;
+                height: 50px;
+                margin-right: 5px;
+            }
+            .address-txt {
+                font-size: 12px;
+                height: 100%;
+                span:first-child {
+                    font-weight: bold;
+                    color: #8bc541;
+                }
+                span:last-child {
+                    color: #fb4226;
+                }
+            }
+        }
+    }
+    .timeLime {
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: 140%;
+        height: 400px;
+        .timeLine-content {
+            // margin-bottom: 10px;
+            margin-left: 10px;
+            border-bottom: 1px solid #d2d6d4;
+            padding: 10px;
+            padding-left: 20px;
+            .timeLine-first {
+                display: flex;
+                img {
+                    height: 100%;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    // Movie-list
+    .mov-list {
+        img {
+            display: block;
+        }
+    }
+}

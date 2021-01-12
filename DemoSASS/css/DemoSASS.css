@@ -1,0 +1,50 @@
+h1 {
+  background-color: yellow;
+}
+
+h2 {
+  background-color: red;
+}
+
+.sec1 h2, .sec2 h2 {
+  background-color: palegreen;
+}
+
+.sec1 button, .sec2 button {
+  background-color: blue;
+  color: white;
+}
+
+.sec1 button:hover, .sec2 button:hover {
+  background-color: white;
+  color: black;
+}
+
+.sec2 button {
+  padding: 11px 12px;
+}
+
+.sec3 h2 {
+  background-color: olivedrab;
+}
+
+.sec3 button {
+  background-color: orange;
+}
+
+.sec4 h2 {
+  background-color: pink;
+}
+
+.sec4 button {
+  background-color: green;
+}
+
+.sec5 h2 {
+  background-color: purple;
+}
+
+.sec5 button {
+  background-color: yellow;
+}
+/*# sourceMappingURL=DemoSASS.css.map */

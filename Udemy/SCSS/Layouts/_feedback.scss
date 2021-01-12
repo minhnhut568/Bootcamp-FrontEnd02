@@ -1,0 +1,39 @@
+.feedback {
+    background: rgb(219, 217, 217);
+    .tab-content-feedback {
+        .tab_item {
+            .card {
+                .pic {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                }
+                .pic1 {
+                    background: url(../../Img/people1.jpg) 60% 40% no-repeat;
+                }
+                .pic2 {
+                    background: url(../../Img/people2.jpeg) 45% 40% no-repeat;
+                }
+                .pic3 {
+                    background: url(../../Img/people3.jpg) 50% 40% no-repeat;
+                }
+                .pic4 {
+                    background: url(../../Img/people4.jpeg) 50% 40% no-repeat;
+                }
+                .pic5 {
+                    background: url(../../Img/people5.jpg) 50% 40% no-repeat;
+                }
+                .pic6 {
+                    background: url(../../Img/people6.jpg) 50% 40% no-repeat;
+                }
+                .name {
+                    @include styleText($color-black-0, $fs-3, $fw-bold);
+                    position: absolute;
+                    top: 20%;
+                    left: 45%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}

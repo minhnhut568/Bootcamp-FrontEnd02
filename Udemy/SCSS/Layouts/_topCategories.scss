@@ -1,0 +1,35 @@
+.topCategories{
+    .topCategories_content{
+        h3{
+            @include styleText($color-black-0, $fs-3, $fw-bold);
+            margin-top: 40px;
+        }
+        width: 80%;
+        margin: auto;
+        .card-group{
+            .card{
+                width: 100px;
+                height: 50px;
+                margin: 20px;
+                box-shadow: 0px 2px 5px 0px rgb(46, 45, 45);
+                cursor: pointer;
+                transition: all 0.5s;
+                span{
+                    i{
+                        font-size: 30px;
+                        margin: 10px;
+                    }
+                    p{
+                        padding-top: 15px;
+                        padding-left: 10px;
+                    }
+                }
+                &:hover{
+                    box-shadow: 0px 2px 5px 4px rgb(66, 66, 66);
+                }
+            }
+        }
+    }
+}
+
+//Responsive

@@ -1,0 +1,27 @@
+.companies {
+    background: rgb(219, 217, 217);
+    .companies_content {
+        text-align: center;
+        .logo {
+            cursor: pointer;
+            img {
+                padding-top: 15px;
+                margin-right: 70px;
+            }
+        }
+        .row_conpanies{
+            padding-top: 60px;
+            padding-bottom: 50px;
+            width: 90%;
+            margin: auto;
+            .col{
+                h2{
+                    @include styleText ($color-black-0, $fs-2, $fw-bold);
+                }
+            }
+            .col:nth-child(1){
+                border-right: 1px solid rgb(167, 163, 163);
+            }
+        }
+    }
+}

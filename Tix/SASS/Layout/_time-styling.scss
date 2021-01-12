@@ -1,0 +1,47 @@
+.timeLime {
+    margin-left: 20px;
+    .timeLine-content {
+        .timeLine-first {
+            img {
+                width: 50px;
+            }
+            .timeLine-first-txt {
+                margin-left: 5px;
+                p {
+                    margin: 0;
+                }
+                span:first-child {
+                    background-color: tomato;
+                    color: white;
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+                span {
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+                
+            }
+        }
+        .timeLine-last {
+            // height: 100%;
+            .timeLine-timer {
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 5px;
+                margin-bottom: 5px;
+                display: inline-block;
+                cursor: pointer;
+                // margin: 10px;
+                span {
+                    font-size: 20px;
+                    color: #108f3e;
+                    font-weight: bold;
+                    &:hover {
+                        color: tomato;
+                    }
+                }
+            }
+        }
+    }
+}

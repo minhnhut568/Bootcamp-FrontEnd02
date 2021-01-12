@@ -1,0 +1,559 @@
+
+/* LAPTOP 14 INCHES */
+
+
+/* Golbal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+html, body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+    /* Housing */
+
+header{
+    
+    width: 100%;
+    height: 700px;
+    
+}
+header .Housing{
+    background-color: rgba(0, 0, 0, 0.486);
+    padding-left: 10px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+header .Housing h2{
+    font-size: 56px;
+    color: white;
+    font-weight: normal;
+}
+header .Housing h2 b{
+    color: rgb(28, 202, 255);
+    font-weight: normal;
+}
+header .Housing ul {
+    list-style: none;
+    padding-top: 25px;
+}
+header .Housing ul li{
+    display: inline;
+    
+}
+header .Housing ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    transition: all 1s;
+}
+header .Housing ul li a:hover{
+    border-bottom: none;
+    color:  rgb(28, 202, 255);
+}
+    /* Carousel */
+
+.Carousel {
+    width: 100%;
+    display: block;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.Carousel .CarouselContent .CarouselContentItem{
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    
+}
+.owl-theme .owl-nav.disabled+.owl-dots{
+    position: relative;
+    top: -100px;
+}
+.Carousel .CarouselContent .CarouselContentItem h2{
+    font-size: 70px;
+    
+}
+.Carousel .CarouselContent .CarouselContentItem p{
+    font-size: 30px;
+}
+.Carousel .CarouselContent .CarouselContentItem1 {
+    background-image: url(../img/b1.jpg);
+
+}
+.Carousel .CarouselContent .CarouselContentItem2 {
+    background-image: url(../img/b2.jpg);
+}
+.Carousel .CarouselContent .CarouselContentItem3 {
+    background-image: url(../img/b3.jpg);
+}
+.Carousel .CarouselContent .CarouselContentItem4 {
+    background-image: url(../img/b4.jpg);
+}
+
+
+/* ABOUT */
+.About{
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.About h1{
+    margin-bottom: 30px;
+    font-size: 60px;
+}
+.About p{
+    line-height: 35px;
+}
+.About .AboutWithIcon{
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.About .AboutWithIcon i{
+    border: 1px solid rgb(43, 41, 41);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 100px;
+    transition: all 0.5s;
+}
+.About .AboutWithIcon i:hover{
+    background-color:  rgb(28, 202, 255);
+    color: white;
+}
+.About .AboutWithoutIcon h2{
+    color:  rgb(28, 202, 255);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+
+/* STATS */
+.Stats{
+    background-color: rgb(28, 202, 255);
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    margin-top: 60px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.Stats h1{
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    
+}
+.Stats .NumberContent{
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 50px;
+}
+.Stats .NumberItems p:first-child{
+    color: white;
+    font-size: 60px;
+    
+}
+.Stats .NumberItems p:last-child{
+    font-size: 30px;
+    padding-top: 20px;
+}
+.Stats .NumberItems{
+    width: 25%;
+}
+
+/* BLOG */
+.Blog{
+    width: 90%;
+    /* Cho no vao giua */
+    margin: 0 auto;
+}
+
+.Blog h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.Blog .BlogContent{
+    display: flex;
+}
+.Blog .BlogContent img{
+    border-top: 3px solid rgb(28, 202, 255);
+    width: 100%;
+    /* display: block; */
+
+}
+.Blog .BlogContent .BlogContentItem{
+    background-color: rgb(235, 227, 227);
+    margin: 20px;
+}
+.Blog .BlogContent .BlogContentItem p, button{
+    margin: 20px;
+}
+.Blog .BlogContent .BlogContentItem .Explain{
+    line-height: 30px;
+}
+.Blog .BlogContent .BlogContentItem a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(28, 202, 255);
+    transition: all .75s;
+}
+.Blog .BlogContent .BlogContentItem a:hover{
+    color: black;
+}
+.Blog .BlogContent .BlogContentItem button{
+    padding: 10px 25px 10px 25px;
+
+    font-size:18px;
+    color:  rgb(28, 202, 255);
+    background-color: black;
+    border: none;
+    transition: all .75s;
+}
+.Blog .BlogContent .BlogContentItem button:hover{
+    color: white;
+}
+
+/* GET MORE */
+.GetMore{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.GetMore .GetMoreText{
+    padding: 40px 50px 30px 50px;
+    background-color: rgb(28, 202, 255);
+}
+.GetMore .GetMoreText .Explain{
+    margin-top: 20px;
+    line-height: 40px;
+    color: white;
+}
+.GetMore .GetMoreText h1{
+    font-size: 50px;
+
+}
+
+.GetMore .GetMoreText button{
+    padding: 10px 25px 10px 25px;
+
+    font-size:18px;
+    color:  rgb(28, 202, 255);
+    background-color: black;
+    border: none;
+    transition: all .75s;
+}
+.GetMore .GetMoreText button:hover{
+    color: white;
+}
+.GetMore .GetMoreVideo .HouseVideo{
+    background: #fff;
+    padding: 2em;
+    text-align: left;
+    max-width: 500px;
+    margin: 40px auto;
+    position: relative;
+    text-align: center;
+}
+.GetMore .GetMoreVideo .GetMoreVideoPosition{
+    position: relative;
+}
+.GetMore .GetMoreVideo .GetMoreVideoPosition a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* PORTFOLIO */
+.Portfolio{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.Portfolio h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.Portfolio .PortfolioContent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    row-gap: 15px;
+}
+.Portfolio .PortfolioContent .PortfolioContentItem{
+    position: relative;
+}
+
+.Portfolio .PortfolioContent .PortfolioContentItem .PortfolioBlack{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 90%;
+    height: 80%;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+}
+.Portfolio .PortfolioContent .PortfolioContentItem .PortfolioBlack:hover{
+    opacity: 1;
+}
+
+.Portfolio .PortfolioContent .PortfolioContentItem .PortfolioBlack p:first-child{
+    font-size: 30px;
+    color:rgb(28, 202, 255) ;
+    border-top: 1px solid rgb(28, 202, 255);
+    border-bottom: 1px solid rgb(28, 202, 255);
+    width: 60%;
+    margin: 0 auto;
+    line-height: 80px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.Portfolio .PortfolioContent .PortfolioContentItem .PortfolioBlack p:last-child{
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* SUBSCRIBE */
+.Subscribe{
+    background-color: rgb(28, 202, 255);
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.Subscribe h1{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+.Subscribe p{
+    width: 60%;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.Subscribe input{
+    border: none;
+    padding-left: 20px;
+    width: 500px;
+    height: 45px;
+    font-weight: bold;
+}
+.Subscribe button{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 8px 60px;
+    transition: all .75s;
+}
+.Subscribe button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* OUR AGENTS */
+.OurAgents{
+    height: 600px; 
+}
+.OurAgents h1,.OurAgentsContent{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.OurAgents h1{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.OurAgents .OurAgentsContent{
+    display: flex;
+}
+.OurAgents .OurAgentsContent .OurAgentsContentItem{
+    background-color: rgb(54, 51, 51);
+    margin: 15px;
+}
+.OurAgents .OurAgentsContent .OurAgentsContentItem h2{
+    font-size: 20px;
+    color: rgb(28, 202, 255);
+    margin-top: 20px;
+}
+.OurAgents .OurAgentsContent .OurAgentsContentItem:hover h2{
+    color: white;
+}
+.OurAgents .OurAgentsContent .OurAgentsContentItem p{
+    color: white;
+    line-height: 40px;
+    font-size: 15px;
+}
+.OurAgents .OurAgentsContent .OurAgentsContentItem .Icon{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.OurAgents .OurAgentsContent .OurAgentsContentItem .Icon i{
+    color: white;
+    border: 2px solid white;
+    line-height: 30px;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+}
+.OurAgents .OurAgentsContent .OurAgentsContentItem .Icon .fa-facebook-f:hover{
+    background-color: blue;
+}
+.OurAgents .OurAgentsContent .OurAgentsContentItem .Icon .fa-twitter:hover{
+    background-color: rgb(0, 255, 255);
+}
+.OurAgents .OurAgentsContent .OurAgentsContentItem .Icon .fa-google:hover{
+    background-color: white;
+    color: red;
+}
+.OurMap{
+    margin-top: 150px;
+    border: 15px solid rgba(65, 61, 61, 0.5);
+}
+
+
+/* CONTACT US */
+.ContactUs{
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+    text-align: center;
+    
+}
+.ContactUs h1{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 60px;
+    margin-top: 60px;
+}
+.ContactUs .ContactUsContent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.ContactUs .ContactUsContent .ContactUsContentItem, .Button{
+    width: 100%;
+    padding: 15px;
+}
+
+.ContactUs .ContactUsContent .ContactUsContentItem{
+    background-color: rgb(224, 219, 219);
+    border: none;
+    border-bottom: 2px solid grey;
+    margin-top: 30px;  
+}
+.ContactUs .ContactUsContent .ContactUsContentRight .ItemMassage{
+    height: 65%;
+}
+.ContactUs .ContactUsContent .ContactUsContentRight .Button{
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid black;
+    
+}
+.ContactUs .ContactUsContent .ContactUsContentRight .Button::placeholder{
+    color: white;
+    text-align: center;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: rgb(11, 155, 155) ;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer p{
+    color: white;
+}
+footer p b{
+    color: red;
+}
+footer .Icon i{
+    color: white;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    margin: 20px;
+    font-size: 19px;
+    line-height: 40px;
+    padding-left: 11px;
+}
+footer .Icon .fa-facebook-f:hover{
+    color: blue;
+}
+footer .Icon .fa-twitter:hover{
+    color: yellow;
+}
+footer .Icon .fa-google:hover{
+    color: red;
+}
+footer .Icon .fa-weixin:hover{
+    color: green;
+}
+
+
+/* BackToTop */
+.BackToTop{
+    width: 80px;
+    height: 80px;
+    display: block;
+    border: 3px solid aqua;
+    border-radius: 50%;
+    color: aqua;
+    text-align: center;
+    line-height: 80px;
+    font-size: 50px;
+
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+
+    /* An nut */
+    opacity: 0;
+    visibility: hidden;
+}
+.cd-top--is-visible { 
+    /* back-to-top button visible */
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,109 @@
+.courses {
+    margin-top: $mg-2;
+    .courses_content {
+        width: 90%;
+        margin: auto;
+        .courses_left {
+            .courses_intro {
+                background-color: $color-gray-6;
+                padding: 40% 30px 80px 30px;
+
+                height: 100%;
+                h2 {
+                    @include styleText($color-black-0, $fs-0 + 3, $fw-bold);
+                }
+            }
+        }
+    }
+}
+.myTab {
+    .nav.nav-tabs {
+        width: 100%;
+        border-bottom: none;
+        justify-content: space-between;
+        .nav-item {
+            &:hover {
+                .nav-link {
+                    
+                    border: none;
+                }
+            }
+            .nav-link.active {
+                border: none;
+                border-bottom: 5px solid $color-blue;
+            }
+            .nav-link {
+                @include styleText($color-black-0, $fs-0, $fw-normal);
+                border: none;
+            }
+        }
+    }
+    .tab-content-courses {
+        position: relative;
+        margin-top: $mg-2;
+        .card-title {
+            @include styleText($color-black-0, $fs-0, $fw-bold);
+        }
+        .card-text {
+            @include styleText($color-gray-4, $fs-1, $fw-normal);
+        }
+        .rating {
+            .rating_star {
+                @include styleText($color-yellow, $fs-1, $fw-normal);
+                i {
+                    margin: 1px;
+                }
+            }
+            span.num {
+                @include styleText($color-black-0, $fs-1 + 2, $fw-bold);
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        .price {
+            text-align: right;
+            .old_price {
+                @include styleText($color-gray-4, $fs-1, $fw-normal);
+                text-decoration: line-through;
+            }
+            .new_price {
+                @include styleText($color-black-0, $fs-2, $fw-bold);
+            }
+        }
+    }
+}
+.nav-link {
+    display: block;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+
+//RESPONSIVE
+
+@media screen and (width:992px) {
+    .col-lg-8 {
+        max-width: none;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1063px){
+    .myTab .nav.nav-tabs .nav-item .nav-link{
+        font-size: $fs-1;
+    }
+}
+@include responsive("large") {
+    .courses_content {
+        .col-lg-4 {
+            display: none;
+        }
+    }
+}
+@include responsive("large2") {
+    .courses_content {
+        .col-lg-4 {
+            display: none;
+        }
+    }
+}

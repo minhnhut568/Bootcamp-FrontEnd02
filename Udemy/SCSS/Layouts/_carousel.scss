@@ -1,0 +1,84 @@
+
+.udemyCarousel{
+    // background-image: url(../../Img/cover.jpg);
+    background-image: url(../Img/cover.jpg);
+    height: 550px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .udeCarouselContent{
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        width: 40%;
+        line-height: 30px;
+        h1{
+            @include styleText($color-white-0, $fs-4, $fw-bold);
+        }
+        p{
+            @include styleText($color-white-0, $fs-2 - 2px, $fw-normal);
+        }
+        input::placeholder{
+            font-size: 18px;
+        }
+        .input-group{
+            flex-grow: 6;
+            align-self: center;
+            border: none;
+            .form-control {
+                background-color: $color-white-0;
+                color: black;
+                transition: none;
+                border: none;
+                padding: 25px;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            .input-group-text {
+                background-color: $color-white-0;
+                cursor: pointer;
+                color: $color-red-0;
+                border: none;
+                box-shadow: none;
+                padding-left: 18px;
+                padding-right: 18px;
+                &:hover {
+                    background-color: $color-red-0;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+//RESPONSIVE
+.udemyCarousel {
+    //1200px - 992
+    @include responsive("extra-large") {
+        .udeCarouselContent{
+            width: 40%;
+        }
+    }
+    //992 - 948
+    @include responsive("large") {
+        .udeCarouselContent{
+            width: 50%;
+        }
+    }
+    //948 - 768
+    @include responsive("large2") {
+        .udeCarouselContent{
+            width: 60%;
+        }
+    }
+    //768px - 576
+    @include responsive("medium") {
+        .udeCarouselContent{
+            width: 80%;
+        }
+    }
+}

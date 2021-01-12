@@ -1,0 +1,451 @@
+/* GOLBAL */
+html,
+body {
+    font-family: "Roboto", sans-serif;
+}
+.line::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute;
+    display: inline-block;
+    bottom: -1px;
+    left: 0;
+    transition: all 0.5s;
+}
+.SectionTitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #ec7532;
+    padding-bottom: 25px;
+    border-bottom: 1px solid gray;
+    position: relative;
+}
+.vbox-close {
+    font-size: 50px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+/* 
+ Trong bootstrap da co nen ko can them
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* HEADER */
+header {
+    /* cursor: pointer; */
+    position: absolute;
+    z-index: 99;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header #MovieNavBar ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.74);
+    font-size: 18px;
+}
+header #MovieNavBar .nav-item {
+    position: relative;
+}
+header #MovieNavBar .nav-item::after {
+    box-shadow: 0px 0px 40px yellow;
+}
+header #MovieNavBar .nav-item:hover::after,
+header #MovieNavBar .home::after {
+    width: 100%;
+}
+header .phone {
+    cursor: pointer;
+}
+
+/* MOVIE CAROUSEL */
+#MovieCarousel .carousel-item {
+    height: 800px;
+}
+#MovieCarousel .item1 {
+    background: url(../img/hero-1.jpg) no-repeat center center;
+    background-size: cover;
+}
+#MovieCarousel .carouselItemOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black, transparent);
+}
+#MovieCarousel .carousel-caption {
+    padding-right: 300px;
+    text-align: left;
+    /* Canh giua danh cho position: absolute */
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#MovieCarousel .carousel-caption p:first-child {
+    font-size: 14px;
+    letter-spacing: 2px;
+    /* text-transform: uppercase; */
+    color: #fbbd61;
+}
+#MovieCarousel .carousel-caption h2 {
+    font-size: 52px;
+    font-weight: 300;
+    padding: 0;
+    letter-spacing: 3px;
+    /* opacity: 0; */
+    color: #fff;
+    border: none;
+}
+#MovieCarousel .carousel-caption p:last-child {
+    font-size: 18px;
+    color: white;
+}
+#MovieCarousel .carousel-caption .MovieTrailer span {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 48px;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    border-radius: 50%;
+}
+#MovieCarousel .carousel-caption .MovieTrailer button i {
+    margin-right: 10px;
+}
+#MovieCarousel .carousel-caption .MovieTrailer button {
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    text-decoration: none;
+    padding: 13px 35px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+#MovieCarousel .carousel-caption .MovieTrailer button .ButtonOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    height: 100%;
+    opacity: 0.3;
+    background-color: #ec7532;
+    transform: skewX(30deg) translateX(-110%);
+    transition: all 0.2s;
+}
+#MovieCarousel .carousel-caption .MovieTrailer button:hover .ButtonOverlay {
+    transform: skewX(30deg) translateX(-20%);
+}
+#MovieCarousel .carousel-indicators {
+    justify-content: left;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#MovieCarousel .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: transparent;
+    opacity: 1;
+    /* Co 1 vien nho ben ngoai */
+    background-clip: border-box;
+}
+#MovieCarousel .carousel-indicators li.active {
+    background-color: white;
+}
+
+/* NEW IN */
+.NewIn {
+    margin-top: 60px;
+}
+.NewIn .h2::after {
+    width: 90px;
+}
+.NewIn .NewInImg {
+    position: relative;
+    /* An khi chua hieu ung */
+    overflow: hidden;
+    border-radius: 10px;
+}
+.NewIn .NewInImg .NewInReadMore {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0;
+    transition: all 0.1s;
+}
+.NewIn .NewInImg .NewInReadMore a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.NewIn .NewInImg .NewInReadMore span {
+    font-size: 13px;
+}
+.NewIn .NewInImg .NewInReadMore i {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 2px solid white;
+    line-height: 70px;
+    margin: 10px auto;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.NewIn .NewInImg .NewInReadMore i:hover {
+    transform: scale(0.8);
+}
+.NewIn .NewInContent .NewInOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190%;
+    height: 100%;
+    opacity: 0.85;
+    background: linear-gradient(to bottom, #fbbd61, #ec7532);
+    /* Vi tri chua re chuot */
+    transform: skewX(30deg) translateX(-120%);
+    transition: all 0.2s;
+}
+.NewIn .NewInImg:hover .NewInOverlay {
+    /* Vi tri da re chuot*/
+    transform: skewX(30deg) translateX(-20%);
+}
+.NewIn .NewInImg:hover .NewInReadMore {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+.NewIn .NewInContent .NewInMovieName p {
+    padding-top: 20px;
+    text-align: center;
+}
+.NewIn .NewInMovieName .star {
+    text-align: center;
+    opacity: 0.65;
+}
+.NewIn .NewInMovieName .star .yellow {
+    color: rgb(255, 166, 0);
+}
+
+/* SHOW TIMES */
+.ShowTime {
+    margin-top: 100px;
+}
+.ShowTime .nav-tabs .nav-link {
+    position: relative;
+    color: gray;
+    padding: 10px 30px;
+}
+.ShowTime .nav-tabs .nav-link.active.line::after,
+.ShowTime .nav-tabs .nav-link:hover.line::after {
+    width: 100%;
+}
+.ShowTime .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active,
+.ShowTime .nav-tabs .nav-link:hover {
+    border: white;
+}
+.ShowTimeDetails .ShowTimeLists i,
+.ShowTimeDetails .ShowTimeLists span {
+    font-size: 14px;
+}
+.ShowTimeLength span {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+}
+.ShowTimeMovie img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.ShowTimeDetails span:first-child,
+.ShowTimeDetails a {
+    color: #ec7532;
+}
+.ShowTimeDetails .ShowTimeLists button {
+    background: rgb(179, 175, 175);
+}
+.ShowTimeDetails .ShowTimeLists .btn1 {
+    opacity: 0.35;
+}
+.ShowTimeDetails h1 {
+    font-size: 30px;
+}
+
+/* COMING SOON */
+.ComingSoon {
+    background-color: black;
+}
+.ComingBg {
+    padding: 80px 0;
+    background-image: url(../img/slide-3.png);
+    background-size: cover;
+    background-position: center center;
+}
+.ComingBg h1:first-child::after {
+    width: 130px;
+}
+.ComingBg h1:first-child,
+.ComingDetails p.text,
+.ComingDetails .star span {
+    color: white;
+}
+.ComingDetails span:first-child,
+.ComingDetails a {
+    color: #ec7532;
+}
+.ComingDetails h1 {
+    font-size: 35px;
+    color: white;
+}
+.ComingDetails .star .yellow {
+    color: #fbbd61;
+}
+.ComingTrailer {
+    position: relative;
+}
+.ComingTrailer i {
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #ec7532;
+    line-height: 84px;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* MOVIE LIST */
+.MovieLists {
+    background-color: black;
+    height: auto;
+}
+.MovieLists .owl-carousel .item {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+.MovieLists .owl-carousel .item:hover {
+    opacity: 1;
+}
+.MovieLists .owl-carousel .item img {
+    max-width: 100%;
+    height: auto;
+    padding: 15px;
+    border-radius: 20px;
+}
+.MovieLists .owl-carousel .item p {
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+.MovieLists .owl-carousel .item p:last-child {
+    color: rgba(255, 255, 255, 0.555);
+    font-size: 14px;
+}
+.owl-carousel .owl-dot {
+    opacity: 0;
+}
+.owl-carousel .owl-prev span {
+    font-size: 70px;
+    color: #ec7532;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    transition: all 0.3s;
+}
+.owl-carousel .owl-next span {
+    font-size: 70px;
+    color: #ec7532;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    transition: all 0.3s;
+}
+.owl-carousel .owl-prev span:hover {
+    transform: scale(1.5) translateX(-50%);
+}
+.owl-carousel .owl-next span:hover {
+    transform: scale(1.5) translateX(50%);
+}
+
+/* CONTRACT */
+.Contact {
+    background-color: white;
+    height: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+.Contact p:first-child {
+    font-size: 25px;
+}
+.Contact p:last-child {
+    font-size: 45px;
+    color: #ec7532;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+footer h2 {
+    color: #ec7532;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+footer .col-3 p {
+    color: white;
+    line-height: 10px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+footer .col-3 p:hover {
+    color: #fbbd61;
+    cursor: pointer;
+}
+footer .col-3 p i {
+    opacity: 0.4;
+}
+footer .row-2 p {
+    color: white;
+    padding-top: 20px;
+    position: relative;
+    border-top: 1px solid grey;
+    margin-left: 20px;
+}
+footer .row-2 p span {
+    transition: all 0.3s;
+}
+footer .row-2 p span:hover {
+    color: #ec7532;
+    cursor: pointer;
+}

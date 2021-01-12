@@ -1,0 +1,39 @@
+// Khai bao mixin de them css cho cac kieu chu
+
+
+
+@mixin styleText($color, $fs, $fw){
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin styleButton($color,$bg-color, $fw, $border-color,$border-radius,$bg-color-hover, $py, $px){
+    background-color: $bg-color;
+    color: $color;
+    border:1px solid $border-color;
+    font-weight: $fw;
+    padding: $py $px;
+    border-radius: $border-radius;
+    &:hover{
+        background-color: $bg-color-hover;
+    }
+}
+// Xu li responsive
+// $screen: ten man hinh can responsive
+
+@mixin responsive($screen){
+    // Kiem tra ten man hinh co ton tai hay khong
+    // cau lenh dieu kien map-has-key de kiem tra, map chua ten bien
+    @if(map-has-key($map: $breakpoints, $key: 
+    $screen)){
+        // xu li ten man hinh hop le, lay gia tri do
+        // Can 1 bien chua gia tri man hinh lay duoc
+        $value: map-get($map: $breakpoints, $key: $screen);
+        @media screen and (max-width: $value){
+            @content;
+        }
+    }
+    @else{
+        @warn "Screen doen't exist";
+    }
+}

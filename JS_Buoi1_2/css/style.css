@@ -1,0 +1,12 @@
+.divNoiDung{
+  
+    width: 300px;
+    height: 150px;
+    background-color: orange;
+}
+
+.classLamMo{
+    opacity: 0.5;
+    color: blue;
+    transition: all 0.5s;
+}

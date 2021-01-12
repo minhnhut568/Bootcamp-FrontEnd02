@@ -1,0 +1,32 @@
+// Chi chua cac duong dan toi cac file con theo thu tu
+
+// Helpers
+@import "./Helpers/variables";
+@import "./Helpers/mixin";
+
+// Vendors chi import file scss cua thu vien
+
+// Bases
+@import "./Bases/reset";
+@import "./Bases/customize";
+
+// Components
+@import "./Components/form";
+@import "./Components/link";
+@import "./Components/button";
+@import "./Components/link";
+
+// Layouts
+@import "./Layouts/header";
+@import "./Layouts/carousel";
+@import "./Layouts/footer";
+@import "./Layouts/intro";
+@import "./Layouts/courses";
+@import "./Bases/normalized";
+@import "./Layouts/services";
+@import "./Layouts/students";
+@import "./Layouts/banner";
+@import "./Layouts/feedback";
+@import "./Layouts/topCategories";
+@import "./Layouts/footer";
+@import "./Layouts/companies";

@@ -1,0 +1,57 @@
+.intro {
+    background: linear-gradient(to right, $color-red-1, $color-red-0);
+    .introContent {
+        width: 80%;
+        margin: auto;
+
+        padding: $pd-2;
+        .introIcon {
+            .icon {
+                @include styleText($color-white-0, $fs-4 + 10px, $fw-normal);
+            }
+        }
+        .itemText {
+            padding-left: 10px;
+            .p1 {
+                @include styleText($color-white-0, $fs-0 + 2, $fw-bold);
+                margin-bottom: 0;
+            }
+            .p2 {
+                @include styleText($color-white-0, $fs-0, $fw-normal);
+            }
+        }
+    }
+}
+
+//RESPONSIVE
+
+.intro {
+    //1200px - 992
+    @include responsive("extra-large") {
+        .introItem {
+            .introIcon {
+                display: none;
+            }
+            .itemText {
+                text-align: center;
+            }
+        }
+    }
+    @include responsive("large2") {
+        .col-md-4 {
+            padding: 0;
+            .introContent {
+                width: 90%;
+               
+            }
+        }
+    }
+    @include responsive("medium") {
+        .introIcon {
+            display: none;
+        }
+        .itemText {
+            display: none;
+        }
+    }
+}

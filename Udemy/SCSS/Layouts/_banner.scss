@@ -1,0 +1,77 @@
+.banner {
+    background-color: $color-black-0;
+    width: 100%;
+    height: auto;
+    .banner_top_border {
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(to right, $color-red-1, $color-red-0);
+    }
+    .banner_content {
+        .row {
+            width: 90%;
+            margin: auto;
+            .col {
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+                i {
+                    @include styleText($color-white-0, $fs-4, $fw-bold);
+                }
+                .text {
+                    text-align: center;
+                    h2 {
+                        @include styleText($color-white-0, $fs-3, $fw-normal);
+                    }
+                    p {
+                        @include styleText($color-white-0, $fs-0, $fw-normal);
+                    }
+                    .ude-btnRed:hover {
+                        border-color: $color-red-1;
+                    }
+                }
+                .fa-truck:before {
+                    position: absolute;
+                    top: 45%;
+                    right: 10%;
+                }
+                .fa-truck-monster:before {
+                    position: absolute;
+                    top: 45%;
+                    left: 10%;
+                }
+            }
+        }
+    }
+}
+
+//Responsive
+
+@media screen and (max-width: 992px) {
+    .banner {
+        
+        .banner_content {
+            height: 300px;
+            align-items: center;
+            .row:nth-child(1),
+            .row:nth-child(3) {
+                display: none;
+            }
+            .row:nth-child(2) {
+                position: relative;
+                .col:nth-child(1),
+                .col:nth-child(3) {
+                    display: none;
+                }
+                .text {
+                    width: 400px;
+                    // width: 90%;
+                    // margin: auto;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.mobile-cover {
+    background: url(../img/mobile-cover.jpg);
+}
+.mobileApp {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    .mobileApp-phone {
+        margin: 0 100px;
+        .mobileApp-phone-content {
+            position: relative;
+            .phone {
+                width: 208px;
+                height: 400px;
+                border-radius: 45px;
+                margin: 20px 0;
+            }
+            .mobileApp-phone-img {
+                display: inline-block;
+                position: absolute;
+                left: 9px;
+                top: 11px;
+                img {
+                    border-radius: 30px;
+                    overflow: hidden;
+                    height: 378px;
+                    width: 91%;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+    .mobileApp-txt {
+        margin-top: 6%;
+        color: white;
+        p {
+            padding: 20px 0;
+        }
+        span {
+            text-decoration: underline;
+        }
+        button {
+            border: none;
+            padding: 8px 15px;
+            background-color: tomato;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover {
+                background-color: rgb(177, 59, 38);
+            }
+        }
+    }
+}

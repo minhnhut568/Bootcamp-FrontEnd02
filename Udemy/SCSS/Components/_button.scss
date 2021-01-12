@@ -1,0 +1,24 @@
+.ude-btnWhite {
+    @include styleButton(
+        $color-gray-4,
+        $color-white-0,
+        $fw-bold-0,
+        $color-black-light,
+        $border-radius,
+        $color-gray-1,
+        $pd-1 + 1,
+        $pd-1 + 2
+    );
+}
+.ude-btnRed {
+    @include styleButton(
+        $color-white-0,
+        $color-red-0,
+        $fw-bold-0,
+        $color-red-0,
+        $border-radius,
+        $color-red-1,
+        $pd-1 + 1,
+        $pd-1 + 2
+    );
+}

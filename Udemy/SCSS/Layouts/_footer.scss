@@ -1,0 +1,79 @@
+footer {
+    
+    .footer_content {
+        .row:nth-child(1) {
+            border-bottom: 1px solid rgb(196, 192, 192);
+            .col:nth-child(1),
+            .col:nth-child(2),
+            .col:nth-child(3){
+                margin-top: 40px;
+                p {
+                    a {
+                        text-decoration: none;
+                        @include styleText($color-blue, $fs-1, $fw-normal);
+                    }
+                    line-height: 10px;
+                }
+                .bold a {
+                    @include styleText($color-blue, $fs-1, $fw-bold-0);
+                }
+            }
+            .col:nth-child(4){
+                button.btn.btn-secondary.dropdown-toggle {
+                    margin-top: 50%;
+                    margin-left: 90%;
+                    transform: translateX(90%);
+                    i{
+                        font-size: 15px;
+                    }
+                    background-color: white;
+                    color: rgb(114, 109, 109);
+                    &:hover{
+                        color: black;
+                    }
+                }
+                .dropdown-menu{
+                    width: 50px;
+                    p{
+                        line-height: 30px;
+                        margin: 0;
+                        padding-left: 15px;
+                        cursor: pointer;
+                        &:hover{
+                            background: rgb(199, 195, 195);
+                        }
+                    }
+                }
+            }
+
+        }
+        .row:nth-child(2){
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 8px solid $color-red-0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .col-4:nth-child(1){
+                span{
+                    font-size: 13px;
+                }
+                img{
+                    width: 150px;
+                    cursor: pointer;
+                }
+            }
+            .col-4:nth-child(2){
+                position: relative;
+                span{
+                    position: absolute;
+                    top: 45%;
+                    right: 10%;
+                    a{
+                        text-decoration: none;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@media screen and (max-width:1504px) {
+    .timeLine {
+        .timeLine-row {
+            .time-border-right {
+                border-right: 0px;
+            }
+        }
+        .timeLime {
+            width: 100%;
+            .timeLine-content {
+                .timeLine-last {
+                    .timeLine-timer {
+                        padding: 2px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:576px) {
+    .timeLine {
+        .timeLine-movie-logo {
+            display: inline;
+        }
+    }
+}
+
+// Mobile app
+@media screen and (max-width:576px) {
+    .mobileApp {
+        display: block;
+        .mobileApp-phone {
+            margin: 0;
+            .mobileApp-phone-content {
+                margin-left: 15px;
+                .mobileApp-phone-img {
+                    img {
+                        width: 189px;
+                        margin: 0;
+                    }
+                    .item {
+                        // margin: 0;
+                    }
+                }
+            }
+        }
+        .mobileApp-txt {
+            text-align: center;
+            p {
+                padding: 0;
+            }
+        }
+    }
+}

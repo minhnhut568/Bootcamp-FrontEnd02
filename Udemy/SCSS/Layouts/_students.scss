@@ -1,0 +1,37 @@
+.students .tab-content-student {
+    position: relative;
+    margin-top: $mg-2;
+    .card {
+        .card-title {
+            @include styleText($color-black-0, $fs-0, $fw-bold);
+        }
+        .card-text {
+            @include styleText($color-gray-4, $fs-1, $fw-normal);
+        }
+        .rating {
+            .rating_star {
+                @include styleText($color-yellow, $fs-1, $fw-normal);
+                i {
+                    margin: 0;
+                }
+            }
+            span.num {
+                @include styleText($color-black-0, $fs-1 + 2, $fw-bold);
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        .price {
+            text-align: right;
+            .old_price {
+                @include styleText($color-gray-4, $fs-1, $fw-normal);
+                text-decoration: line-through;
+            }
+            .new_price {
+                @include styleText($color-black-0, $fs-2, $fw-bold);
+            }
+        }
+    }
+}
+
+//Responsive
