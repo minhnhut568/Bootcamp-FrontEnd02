@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU;EACN,WAAW,EAAE,UAAU;EACvB,GAAG,EAAE,eAAe;;;AAGxB,AAAA,WAAW,CAAC;EACR,WAAW,EAAE,UAAU;CAC1B",
+    "sources": [
+        "../AppXucXac/style.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
