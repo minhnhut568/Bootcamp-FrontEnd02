@@ -4,6 +4,11 @@ import BtnChoi from "./BtnChoi";
 import KetQua from "./KetQua";
 import "./style.scss";
 
+//Tao So ngau nhien
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 export default class AppXucXac extends Component {
   //luu 6 mat xuc xac
   xucXac = [
@@ -60,6 +65,34 @@ export default class AppXucXac extends Component {
       },
     ],
   };
+  xulyKetQua = () => {
+    const newKetQuaXucXac = [
+      this.xucXac[getRandomInt(6)],
+      this.xucXac[getRandomInt(6)],
+      this.xucXac[getRandomInt(6)],
+    ];
+    const tongDiem = newKetQuaXucXac.reduce((tong, xucXac) => {
+      return (tong += xucXac.soDiem);
+    }, 0);
+    //xet kq
+    let taiOrXiu;
+    if (tongDiem >= 3 && tongDiem <= 10) {
+      taiOrXiu = false;
+    } else {
+      taiOrXiu = true;
+    }
+    //xet co dung
+    let { tongSoBanChoi, soBanThang} = this.state;
+    if (taiOrXiu == this.state.banChon){
+      ++soBanThang;
+    }
+    ++tongSoBanChoi;
+    this.setState({
+      ketQuaXucXac: newKetQuaXucXac,
+      soBanThang,
+      tongSoBanChoi,
+    });
+  };
   xuLy = (banChon) => {
     this.setState({
       banChon: banChon,
@@ -81,11 +114,18 @@ export default class AppXucXac extends Component {
       >
         <div className="container">
           <h3 className="display-4 text-center">BÀI TẬP GAME XÚC XẮC</h3>
-          <BanChoi ketQuaXucXacProps={this.state.ketQuaXucXac} xuLyBanChonProps={this.xuLy}></BanChoi>
+          <BanChoi
+            ketQuaXucXacProps={this.state.ketQuaXucXac}
+            xuLyBanChonProps={this.xuLy}
+          ></BanChoi>
         </div>
         <div className="container text-center display-4">
-          <KetQua tongSoBanChoiProps={this.state.tongSoBanChoi} soBanThangProps = {this.state.soBanThang} banChonProp={this.state.banChon}></KetQua>
-          <BtnChoi></BtnChoi>
+          <KetQua
+            tongSoBanChoiProps={this.state.tongSoBanChoi}
+            soBanThangProps={this.state.soBanThang}
+            banChonProp={this.state.banChon}
+          ></KetQua>
+          <BtnChoi xulyKetQuaProps={this.xulyKetQua}></BtnChoi>
         </div>
       </div>
     );
