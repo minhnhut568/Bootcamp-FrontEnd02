@@ -9,7 +9,9 @@ import ShowRoomCar from "./show-room-car";
 import ListAndKeys from "./list-and-keys";
 import Props from "./props";
 import Glasses from "./GlassesApp";
-import AppXucXac from "./AppXucXac";
+// import AppXucXac from "./AppXucXac";
+import AppXucXacRedux from "./AppXucXacRedux";
+
 
 function App() {
   return (
@@ -28,7 +30,8 @@ function App() {
       {/* <ListAndKeys /> */}
       {/* <Props /> */}
       {/* <Glasses></Glasses> */}
-      <AppXucXac></AppXucXac>
+      {/* <AppXucXac></AppXucXac> */}
+      <AppXucXacRedux></AppXucXacRedux>
     </div>
 
   );

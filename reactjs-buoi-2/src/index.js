@@ -12,13 +12,19 @@ import "../node_modules/popper.js/dist/popper.min.js";
 
 // redux
 import { createStore } from "redux";
-
-const store = createStore();
+import { Provider } from "react-redux";
+import rootReducers from './redux/reducers'
+const store = createStore(
+    rootReducers,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  );
 
 ReactDOM.render(
   // nội dung đưa ra màn hình
   <React.StrictMode>
-    <App />
+    <Provider store = {store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   // vị trí đưa ra màn hình
   document.getElementById("root")
