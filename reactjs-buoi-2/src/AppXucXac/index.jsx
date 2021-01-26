@@ -99,6 +99,27 @@ export default class AppXucXac extends Component {
       //banChon,
     });
   };
+  choiGame = () =>{
+    console.log("choigame");
+    let i = 0;
+    const counter = setInterval(()=>{
+      const newKetQuaXucXac = [
+        this.xucXac[getRandomInt(6)],
+        this.xucXac[getRandomInt(6)],
+        this.xucXac[getRandomInt(6)],
+      ];
+      this.setState({
+        ketQuaXucXac : newKetQuaXucXac,
+      });
+      i++;
+      if(i > 10) {
+        //dung
+        clearInterval(counter);
+        //tinh kq
+        this.xulyKetQua();
+      }
+    }, 100);
+  };
   render() {
     return (
       <div
@@ -125,7 +146,7 @@ export default class AppXucXac extends Component {
             soBanThangProps={this.state.soBanThang}
             banChonProp={this.state.banChon}
           ></KetQua>
-          <BtnChoi xulyKetQuaProps={this.xulyKetQua}></BtnChoi>
+          <BtnChoi choiGameProps = {this.choiGame} xulyKetQuaProps={this.xulyKetQua}></BtnChoi>
         </div>
       </div>
     );

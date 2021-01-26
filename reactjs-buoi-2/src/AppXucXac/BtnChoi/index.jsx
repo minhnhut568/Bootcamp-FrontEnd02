@@ -2,8 +2,9 @@ import React, { Component } from "react";
 
 export default class BtnChoi extends Component {
     xuLyChoiGame = () => {
-        const {xulyKetQuaProps} = this.props;
-        xulyKetQuaProps();
+        const {xulyKetQuaProps, choiGameProps} = this.props;
+        // xulyKetQuaProps();
+        choiGameProps();
     };
   render() {
     return (

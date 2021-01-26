@@ -10,6 +10,11 @@ import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import "../node_modules/jquery/dist/jquery.min.js";
 import "../node_modules/popper.js/dist/popper.min.js";
 
+// redux
+import { createStore } from "redux";
+
+const store = createStore();
+
 ReactDOM.render(
   // nội dung đưa ra màn hình
   <React.StrictMode>
